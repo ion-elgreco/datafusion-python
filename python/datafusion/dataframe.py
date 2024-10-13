@@ -226,7 +226,7 @@ class DataFrame:
     def collect(self) -> list[pa.RecordBatch]:
         """Execute this :py:class:`DataFrame` and collect results into memory.
 
-        Prior to calling ``collect``, modifying a DataFrme simply updates a plan
+        Prior to calling ``collect``, modifying a DataFrame simply updates a plan
         (no actual computation is performed). Calling ``collect`` triggers the
         computation.
 
